@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main{
+    height: 100vh;
+    width: 98vw;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+#nav{
+    width: 100%;
+    height: 7%;
+    position: relative;
+    display: flex;
+    /* background-color: rgba(255, 255, 255, 0.131); */
+    border-radius: 5px;
+}
+.logo{
+    height: 100%;
+    width: 20%;
+    /* background-color: blueviolet; */
+}
+.content{
+    height: 100%;
+    width: 60%;
+    /* background-color: chartreuse; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.shopping{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: royalblue; */
+}
+.shop{
+    font-size: 13px;
+    font-family: "Roboto";
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.776);
+    transition: .2s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blue; */
+}
+.shop i{
+    margin-left: 5px;
+}
+.logo > span{
+    font: 700 2.8vmax "gilroy";
+    color: rgb(41, 203, 136);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+}
+h4{
+    /* font: 600 1vmax "gilroy"; */
+    font-size: 13px;
+    font-family: "Roboto";
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.776);
+    transition: .2s linear;
+}
+#nav .line{
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    margin: auto;
+    bottom: 0;
+    left: 50px;
+    background: rgb(0, 0, 0);
+}
+#container{
+    height: 70%;
+    width: 100%;
+    /* background-color: yellow; */
+    display: flex;
+}
+#left{
+    height: 100%;
+    width: 40%;
+    /* background-color: blue; */
+    position: relative;
+}
+#right{
+    height: 100%;
+    width: 60%;
+    /* background: blue; */
+}
+#right > img{
+    height: 100%;
+    width: 76%;
+    padding: 20px;
+    margin-left: 50px;
+}
+
+#left > h1{
+    font: 600 4.8vmax "Roboto";
+    padding-left: 10vw;
+    padding-top: 30vh;
+    transition: 0.25s all linear;
+    animation: heading 3s linear infinite both;
+}
+@keyframes heading {
+0%{
+    transform: translateX(0px);
+}
+50%{
+    transform: translateX(10px);
+}
+100%{
+    transform: translateX(0px);
+}
+
+}
+
+#bottom{
+    height: 23%;
+    /* width: 100%;background-color: aqua; */
+    margin-top: 20px;
+    position: relative;
+}
+#bottom > h3{
+    font: 700 1.1vmax "Roboto";   
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 20px;
+}
+#heat{
+    padding-left: 45%;
+    margin: 20px;
+}
+button{
+    height: 5vh;
+    width: 10vw;
+    margin-left: 45%;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    transition: .3s linear ;
+}
+button:hover{
+    background-color: black;
+    color: white;
+    /* border-color: white; */
+    cursor: pointer;
+}
+h4:hover{
+    color: black;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.shop:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}

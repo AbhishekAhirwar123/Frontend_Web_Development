@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    border-right-color: rgb(240,242,245);
+    display: flex;
+}
+
+#box1 {
+    height: 100vh;
+    width: 55vw;
+    /* background-color: blue; */
+    position: relative;
+}
+
+#container {
+    height: 30vh;
+    width: 40vw;
+    /* background-color: aqua; */
+    position: absolute;
+    top: 42%;
+    left: 60%;
+    transform: translate(-50%,-50%);
+}
+
+#container > h1{
+    font: 700 4.2vmax "Roboto";
+    color: rgb(24,119,242);
+}
+
+#container > h3{
+    font: 400 2vmax "Roboto";
+    margin-top: 1vmax;
+}
+
+
+
+
+
+
+#box2 {
+    height: 100vh;
+    width: 45vw;
+    /* background-color: chartreuse; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#content{
+    height: 50vh;
+    width: 28vw;
+    background-color: white;
+    /* border: 1px solid; */
+    box-shadow: 1px 1px 2px 2px rgba(205, 199, 199, 0.528);
+    border-radius: 8px;
+    display: flex;
+    flex-direction:  column;
+    margin-bottom: 50px;
+    position: relative;
+}
+.fill{
+    height: 50px;
+    width: 350px;
+    padding-left: 1.5rem;
+    margin-left: 20px;
+    margin-block-start: 15px;
+    border-radius: 5px ;
+    font: 500 1.3vmax "Roboto";
+    border: 1px solid rgba(0, 0, 0, 0.388);
+    opacity: 0.5;
+    
+}
+button{
+    height: 50px;
+    width: 350px;
+    font: 600 1.5vmax "Roboto";
+    margin-left: 20px;
+    margin-block-start: 20px;
+    border-radius: 5px ;
+    border: 1px solid rgba(0, 0, 0, 0.388);
+    color: white;
+    background-color: rgb(24,119,242);
+}
+a{
+    font: 400 1vmax "Roboto";
+    text-decoration: none;
+    color: rgb(58,159,247);
+    margin-top: 1.2vmax;
+    margin-left: 9vmax;    
+
+}
+hr{
+    width: 90%;
+    margin: 1.5vmax;
+    opacity: 0.5;
+}
+span > button{
+    font: 600 1.2vmax "Roboto";
+    width: 50%;
+    background-color: rgb(66,183,42);
+    position: absolute;
+    margin-top: 0vmax;
+    margin-left: 7vmax;
+    border-radius: 5px;
+    border: 0px solid rgba(0, 0, 0, 0.388);
+}
+p{
+    position: absolute;
+    font: 400 1vmax "Roboto";
+    top: 75%;
+    left: 50%;
+}
+p > a{
+    font-weight: bold;
+    color: black;
+}
